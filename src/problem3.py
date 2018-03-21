@@ -6,6 +6,7 @@ Authors: David Mutchler, Dave Fisher, Matt Boutell, Amanda Stouder,
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
+import math
 
 
 def main():
@@ -93,9 +94,15 @@ def problem3(rect, n, window):
       :type window:  rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function, TESTING each step as you go.
+    # DONE: 2. Implement and test this function, TESTING each step as you go.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    rect.attach_to(window)
+    center = rect.get_lower_right_corner()
+    for k in range(n):
+        circle = rg.Circle(center, rect.get_height() / 2)
+        circle.attach_to(window)
+        center.move_to(center.x + rect.get_height() / math.sqrt(2), center.y + rect.get_height() / math.sqrt(2))
 
 
 # -----------------------------------------------------------------------------
