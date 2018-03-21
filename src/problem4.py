@@ -135,9 +135,19 @@ def problem4(m):
                                  (i.e., it is prime)
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # DONE: 7. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    count = 0
+    for k in range(m):
+        if m % (k + 1) == 0:
+            if k + 1 == m:
+                count = count
+            elif k + 1 == 1:
+                count = count
+            else:
+                count = count + 1
+    return count
 
 
 # -----------------------------------------------------------------------------
