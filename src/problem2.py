@@ -115,10 +115,16 @@ def problem2(line1, line2, thickness, win):
       :type win:        rg.RoseWindow
     """
     # -------------------------------------------------------------------------
-    # TODO: 2. Implement and test this function, TESTING each step as you go.
+    # DONE: 2. Implement and test this function, TESTING each step as you go.
     #          Tests have been written for you (above).
     #   See the IMPORTANT NOTE just above the DEF line above.
     # -------------------------------------------------------------------------
+    line1.attach_to(win)
+    line2.attach_to(win)
+    rectangle = rg.Rectangle(line1.get_midpoint(), line2.get_midpoint())
+    rectangle.attach_to(win)
+    rectangle.outline_thickness = thickness
+    rectangle.outline_color = line1.color
 
 
 # -----------------------------------------------------------------------------
