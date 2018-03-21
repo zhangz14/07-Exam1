@@ -54,6 +54,7 @@ def run_test_problem3():
     window.render()  # In case students forget to do so.
     window.close_on_mouse_click()
 
+
 ###############################################################################
 #
 # IMPORTANT:  In the following problem:
