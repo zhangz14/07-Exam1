@@ -243,7 +243,7 @@ def run_test_problem1b():
     # Test 4:
     expected = 143
     answer = problem1b(5)
-    print('Test 4 is: problem1b()')
+    print('Test 4 is: problem1b(5)')
     print('Expected:', expected)
     print('Actual:  ', answer)
 
