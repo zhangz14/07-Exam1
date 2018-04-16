@@ -271,9 +271,9 @@ def problem1b(r):
     # DONE: 5. Implement and test this function.
     #          See the IMPORTANT NOTE just before the DEF above.
     # -------------------------------------------------------------------------
-    total = 0
+    total = 0 + problem1a(r, r ** 2, r)
     for k in range(r ** 2 - r + 1):
-        if product_of_digits(r + k) <= r:
+        if product_of_digits(r + k) == r:
             total = total + r + k
     return total
 
